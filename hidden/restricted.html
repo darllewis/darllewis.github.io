@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>Garrett Darl Lewis - Current Research</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="Garrett Darl Lewis" />
+<meta name="description" content="Personal Page of Garrett Darl Lewis" />
+<link rel="stylesheet" href="index_files/style.css" type="text/css" /><!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]--><!-- Script for Video Embeds -->
+
+<script type="text/javascript">
+function getElementsByClass (searchClass) {
+// This function returns an array of all HTML objects with the
+// specified className. Tag is optional var returnArray = [];
+var els = document.getElementsByTagName('*');
+var pattern = new RegExp('(^|\\s)'+searchClass+'(\\s|$)');
+for (var i = 0; i < els.length; i++) {
+if ( pattern.test(els[i].className) ) { returnArray.push(els[i]); }
+}
+return returnArray;
+}
+function popVideo(vid, darken) {
+// This function accepts a division ID (vid), either a string or the actual
+// object itself. vid is mandatory. darken is optional, if it's true
+// the page will be greyed out under the video.
+var videos = getElementsByClass('video'); // Get all the videos on the page.
+var isplaying=null;
+for(i=0; i<videos.length; i++) { // Loop through all the videos
+if (videos[i].style.display=='block') { // This video is playing isplaying=videos[i].id; // remember its name
+var tmp=videos[i].innerHTML; // Get the division contents
+videos[i].innerHTML=''; // destroy the contents
+videos[i].style.display='none'; // Terminate the video.
+videos[i].innerHTML=tmp; // rebuild the contents.
+}
+}
+// This handles the darkening of the background while a video is playing.
+// First we see if the dark layer exists.
+var dark=document.getElementById('darkenScreenObject');
+if (!dark) {
+// The dark layer doesn't exist, it's never been created. So we'll
+// create it here and apply some basic styles.
+var tbody = document.getElementsByTagName("body")[0];
+var tnode = document.createElement('div'); // Create the layer.
+tnode.style.backgroundColor='rgb(0, 0, 0)'; // Make it black.
+tnode.style.opacity='0.3'; // Set the opacity (firefox/Opera)
+tnode.style.MozOpacity='0.3'; // Firefox 1.5
+tnode.style.filter='alpha(opacity=30)'; // IE.
+tnode.style.zIndex='1'; // Zindex of 50 so it "floats"
+tnode.style.position='absolute'; // Position absolutely
+tnode.style.top='0px'; // In the top
+tnode.style.left='0px'; // Left corner of the page
+tnode.style.overflow='hidden'; // Try to avoid making scroll bars tnode.style.display='none'; // Start out Hidden
+tnode.id='darkenScreenObject'; // Name it so we can find it later
+tbody.appendChild(tnode); // Add it to the web page
+dark=document.getElementById('darkenScreenObject'); // Get the object.
+}
+dark.style.display='none';
+if ((isplaying==vid)||(/^close$/i.test(vid))) { return false; }
+if (typeof(vid)=="string") { vid=document.getElementById(vid); }
+if (vid&&typeof(vid)=="object") {
+if (darken) {
+// Calculate the page width and height if( window.innerHeight && window.scrollMaxY ) { var pageWidth = window.innerWidth + window.scrollMaxX;
+var pageHeight = window.innerHeight + window.scrollMaxY;
+} else if( document.body.scrollHeight > document.body.offsetHeight ) {
+var pageWidth = document.body.scrollWidth;
+var pageHeight = document.body.scrollHeight;
+} else { var pageWidth = document.body.offsetWidth + document.body.offsetLeft; var pageHeight = document.body.offsetHeight + document.body.offsetTop; }
+//set the shader to cover the entire page and make it visible. dark.style.width= pageWidth+'px';
+dark.style.height= pageHeight+'px';
+dark.style.display='block'; }
+// Make the video visible and set the zindex so its on top of everything else
+vid.style.zIndex='100'; vid.style.display='block';
+var scrollTop = 0;
+if (document.documentElement && document.documentElement.scrollTop)
+scrollTop = document.documentElement.scrollTop;
+else if (document.body)
+scrollTop = document.body.scrollTop;
+// set the starting x and y position of the video
+vid.style.top=scrollTop+Math.floor((document.documentElement.clientHeight/2)-(vid.offsetHeight/2))+'px';
+vid.style.left=Math.floor((document.documentElement.clientWidth/2)-(vid.offsetWidth/2))+'px';
+}
+return false;
+}
+</script></head>
+<body leftmargin="0" topmargin="0" style="background-color: white;" marginheight="0">
+<div id="wrap" style="width: 714px;">
+<div style="text-align: center;"><a href="http://www.princeton.edu"><img style="border: 0px solid ; width: 714px; height: 28px;" alt="" src="index_files/121-banner740-16ptB.jpg" /></a><img alt="" style="width: 714px; height: 229px;" src="index_files/webimage.jpg" /></div>
+<div id="navbar" style="background-color: rgb(0, 0, 0); color: rgb(255, 102, 0);">
+<div style="text-align: center;">
+<form name="searchform" action="http://www.princeton.edu/main/tools/search/" method="get"><li style="color: rgb(255, 102, 0);"><a href="index.html">Home</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="curriculumvitae.pdf">Curriculum Vitae</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="data.html">Files</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="current.html">Current
+Work</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="past.html">Past
+Work</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="teaching.html">Teaching</a></li>
+<span style="color: rgb(255, 102, 0);"></span><li style="color: rgb(255, 102, 0);"><a href="links.html">Links</a></li>
+<span style="color: rgb(255, 102, 0);"></span>
+<span style="color: rgb(255, 102, 0);"></span><input accesskey="4" class="searchBox" id="q" name="q" onblur="if (this.value == '') this.value='Search Site'" onfocus="if (this.value == 'Search Site') this.value=''" size="10" value="Search Site" type="text" /><span style="color: rgb(255, 102, 0);"></span><span style="color: rgb(255, 102, 0);"></span><input class="go" onclick="var queryInput = document.getElementById('q'); if (queryInput.value == 'Search Site') queryInput.value='';this.form.submit();" src="index_files/btn_search.gif" title="Start your search" type="image" /></form>
+</div>
+</div>
+<div id="sidebar">
+<h1>Contact</h1>
+<ul>
+<li>Office: 130 Corwin Hall</li>
+<li>Department of Politics<br />
+Princeton University<br />
+Princeton, NJ 08544</li>
+<li>Phone:&nbsp;(609) 258.4859</li>
+<li>Fax: (609) 258.1110</li>
+<li>Email:&nbsp;<a href="mailto:glewis@princeton.edu">glewis@princeton.edu</a></li>
+<li>Office Hours: By Appointment</li>
+</ul>
+</div>
+<div id="content">
+<h1 style="color: rgb(255, 102, 0); width: 145px;">Current
+Research</h1>
+<ul>
+</ul>
+<ul>
+<li><strong>Areas<br />
+</strong><span></span>
+Political Economy<br />
+Formal
+Theory and Quantitative Methods<br />
+Public Law<br />
+American Politics<br />
+</li>
+<li><strong>Fields<br />
+</strong><span></span>Game
+Theory<br />
+Federalism<br />
+Judicial Politics<br />
+Institutions<br />
+</li>
+<li><strong>Dissertation<br />
+</strong><span></span>"Topics in Judicial
+Federalism,"<br />
+The role and effect of federal structures on judicial outcomes is not
+well understood, despite the importance of such structures on legal
+outcomes in many countries. This project addresses these gaps in the
+literature in a series of essays on the role of federal structures in
+the development of efficient legal regimes, the outcomes that arise as
+a result of those institutions, and the place of the judiciary in a
+wider federal system. <br />
+</li>
+<li><strong>Ongoing Projects<br />
+</strong><span></span><a href="working/national-commerce-local.pdf" target="_blank">"National Commerce, Local Interest, and a Federal Judiciary,"</a><br />
+In the 19th Century, the focal point of the American judiciary was at
+the local level. &nbsp;However, in an effort to prevent local actors
+from pandering to their constituencies at the expense of non-resident
+creditors, Whigs and Republicans in the Northeast helped to establish
+an expanded role for the national courts. &nbsp;This paper develops a
+game-theoretic model of this phenomenon and places it in the context of
+the expansion of the Federal Judiciary during this period. &nbsp; &nbsp;<br />
+<br />"Bias and Selective
+Expertise in State Courts,"<br />
+In a recent series of papers, Matias Iaryczower and coauthors have
+developed a measure of judicial bias and quality. &nbsp;This paper
+applies this model to state courts of last resort to determine the
+extent to which justices develop specific expertise in preferred issue
+areas while deferring to colleagues in other cases. &nbsp;<br />
+<br />"Welfare and Federal Preemption of State Law,"&nbsp;<br />
+Federal lawmakers must decide whether to assert federal authority over
+issues previously governed by individual states; however, when there
+are costs associated with legal change, individual legislators may be
+resistant to adopting uniform national standards, even when such
+standards are welfare-enhancing nation-wide.&nbsp; This paper
+explores these effects in a game theoretic perspective. &nbsp;<br />
+<br />
+"The Judicial Constraint,"<br />
+There is a growing body of literature addressing the ability of the
+legislature to constrain judicial decisions. &nbsp;This paper
+examines the argument from the opposite prospective, emphasizing the
+ability of the judiciary to leverage temporal constraints as a means of
+constraining legislative decisions. &nbsp;<br />
+<br />
+&nbsp;<!--content--></li>
+</ul>
+</div>
+</div>
+<!--wrap-->
+<div id="shadow"> </div>
+<!--shadow-->
+<div id="footer">
+<p>130 Corwin Hall &nbsp;&nbsp; Princeton University
+&nbsp;&nbsp;&nbsp;Princeton, NJ 08544
+&nbsp;&nbsp;&nbsp;Phone:&nbsp;(626)
+372.3753&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:glewis@princeton.edu"> glewis@princeton.edu</a><br />
+<a href="http://www.princeton.edu/">Princeton University</a>
+&nbsp;&nbsp;<span class="vertbar">|</span>&nbsp;&nbsp;<a title="Garrett Lewis" href="http://www.princeton.edu/%7Eglewis/">&nbsp;©&nbsp;
+2013&nbsp;Trustees of Princeton University</a></p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="index_files/ga.js" type="text/javascript">
+<script src="index_files/ga_002.js" type="text/javascript">
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1742113-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

@@ -1,0 +1,7 @@
+SSLRequireSSL
+AuthType Basic
+AuthName "Hidden Area"
+AuthAuthoritative off
+AuthUserFile /u/glewis/.htpasswd
+AuthGroupFile /u/glewis/.htgroup
+require group page
