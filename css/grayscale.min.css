@@ -1,0 +1,342 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+#mainNav{
+	min-height:56px;
+	background-color:#fff
+}
+#mainNav .navbar-toggler{
+	font-size:80%;
+	padding:.75rem;
+	color:#424242;
+	border:1px solid #424242
+}
+#mainNav .navbar-toggler:focus{
+	outline: 0
+}
+#mainNav .navbar-brand{
+	color:#424242;
+	font-weight:700;
+	padding:.9rem 0
+}
+#mainNav .navbar-nav .nav-item:hover{
+	color:fade(white,80%);
+	outline:0;
+	background-color:transparent
+}
+#mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
+	outline:0;
+	background-color:transparent
+}
+@media (min-width:992px){
+	#mainNav{
+		padding-top:0;
+		padding-bottom:0;
+		border-bottom:none;
+		background-color:transparent;
+		transition:background-color .3s ease-in-out
+	}
+	#mainNav .navbar-brand{
+		padding:.5rem 0;
+		color:rgba(22,22,22,.6)
+	}
+	#mainNav .nav-link{
+		transition:none;
+		padding:2rem 1.5rem;
+		color:rgba(22,22,22,.9)
+	}
+	#mainNav .nav-link:hover{
+		color:rgba(22,22,22,.65)
+	}
+	#mainNav .nav-link:active{
+		color:white
+	}
+	#mainNav.navbar-shrink{
+		background-color:#fff
+	}
+	#mainNav.navbar-shrink .navbar-brand{
+		color:rgba(22,22,22,.9)
+	}
+	#mainNav.navbar-shrink .nav-link{
+		color:#424242;
+		padding:1.5rem 1.5rem 1.25rem;
+		border-bottom:.25rem solid transparent
+	}
+	#mainNav.navbar-shrink .nav-link:hover{
+		color:#424242
+	}
+	#mainNav.navbar-shrink .nav-link:active{
+		color:#467370
+	}
+	#mainNav.navbar-shrink .nav-link.active{
+		color:#424242;
+		outline:0;
+		border-bottom:.25rem solid #424242
+	}
+}
+
+.masthead{
+	position:relative;
+	width:100%;
+	height:auto;
+	min-height:35rem;
+	padding:15rem 0;
+	background:linear-gradient(to bottom,rgba(255,165,0,0) 0,rgba(255,165,0,.1) 95%,#FFA500 100%),url(../img/bg-masthead.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-size:cover
+}
+.masthead h1{
+	font-family:'Cabin';
+	font-size:2.5rem;
+	line-height:2.5rem;
+	letter-spacing:.8rem;
+	background:-webkit-linear-gradient(rgba(22,22,22,.8),rgba(22,22,22,.4));
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text
+}
+.masthead h2{
+	max-width:20rem;font-size:1rem
+}
+@media (min-width:768px){
+	.masthead h1{
+		font-size:4rem;
+		line-height:4rem
+	}
+}
+@media (min-width:992px){
+	.masthead{
+		height:100vh;
+		padding:0
+	}
+	.masthead h1{
+		font-size:6.5rem;
+		line-height:6.5rem;
+		letter-spacing:.8rem
+	}
+	.masthead h2{
+		max-width:50rem;
+		font-size:1.25rem
+	}
+}
+
+.btn{
+	box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+	padding:1.25rem 2rem;
+	font-family:'Cabin';
+	font-size:80%;
+	text-transform:uppercase;
+	letter-spacing:.15rem;
+	border:0
+}
+.btn-primary{
+	background-color:#424242
+}
+.btn-primary:hover{
+	background-color:#4f837f
+}
+.btn-primary:focus{
+	background-color:#4f837f;
+	color:#fff
+}
+.btn-primary:active{
+	background-color:#467370!important
+}
+
+.about-section{
+	padding-top:5rem;
+	background:linear-gradient(to bottom,#161616 0,rgba(255,165,0,1) 85%,rgba(255,165,0,0) 100%)
+}
+.about-section p{
+	margin-bottom:5rem
+}
+
+.resume-section{
+	padding-top:10rem;
+	padding-bottom:10rem;
+	margin-top:0rem;
+	background:linear-gradient(to bottom,#161616 0,rgba(255,165,0,1) 80%,rgba(255,165,0,0) 100%), url("../img/mountain.jpg");
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-size:100%
+}
+.resume-section p{
+	margin-bottom:5rem
+}
+
+.teaching-section{
+	padding-top:10rem;
+	padding-bottom:10rem;
+	margin-top:0rem;
+	background:linear-gradient(to bottom,#161616 0,rgba(22,22,22,0) 25%), linear-gradient(to bottom,rgba(255,165,0,.85) 0,rgba(255,165,0,0) 100%), linear-gradient(to top,rgba(255,255,255,1) 0,rgba(255,255,255,.25) 10%,rgba(255,255,255,0) 20%), linear-gradient(to right,rgba(255,165,0,1) 0,rgba(255,165,0,1) 50%,rgba(255,165,0,.3) 65%,rgba(255,165,0,0) 100%), url("../img/waterfall.jpg");
+	background-position:right;
+	background-repeat:no-repeat;
+	background-size:100% 100%
+}
+.teaching-section p{
+	margin-bottom:5rem
+}
+.dos-cols{
+}
+@media only screen and (max-width: 575px) {
+	.dos-cols{
+		width:62.5%!important;
+	}
+}
+
+.projects-section{
+	padding-top:10rem;
+	padding-bottom:10rem;
+	margin-top:0rem;
+	background:linear-gradient(to top,#161616 0,rgba(255,165,0,1) 85%,rgba(255,165,0,0) 100%);
+	background-size:100% 100%
+}
+.projects-section .featured-text{
+	padding:2rem
+}
+@media (min-width:992px){
+	.projects-section .featured-text{
+		padding:0 0 0 2rem;
+		border-left:.5rem solid #424242
+	}
+}
+.projects-section .project-text{
+	padding:3rem;
+	font-size:90%
+}
+@media (min-width:992px){
+	.projects-section .project-text{
+		padding:5rem
+	}
+	.projects-section .project-text hr{
+		border-color:#424242;
+		border-width:.25rem;
+		width:30%
+	}
+}
+.img-fluid {
+      height: auto;
+    }
+
+.signup-section{
+	padding:10rem 0;
+	background:linear-gradient(to bottom,#161616 0,rgba(255,165,0,.75) 10%,rgba(255,165,0,.1) 90%,#161616 100%),url(../img/bg-signup.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-size:cover
+}
+.signup-section .form-inline input{
+	box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+	padding:1.25rem 2rem;
+	height:auto;
+	font-family:'Cabin';
+	font-size:80%;
+	text-transform:uppercase;
+	letter-spacing:.15rem;
+	border:0
+}
+
+.contact-section{
+	padding:5rem 0 0
+}
+.contact-section .card{
+	border:0;
+	border-bottom:.25rem solid #424242
+}
+.contact-section .card h4{
+	font-size:.8rem;
+	font-family:'Cabin';
+	text-transform:uppercase;
+	letter-spacing:.15rem
+}
+.contact-section .card hr{
+	border-color:#424242;
+	border-width:.25rem;
+	width:3rem
+}
+.contact-section .social{
+	margin-top:5rem
+}
+.contact-section .social a{
+	text-align:center;
+	height:3rem;
+	width:3rem;
+	background:rgba(22,22,22,.1);
+	border-radius:100%;
+	line-height:3rem;
+	color:rgba(22,22,22,.3)
+}
+.contact-section .social a:hover{
+	color:rgba(22,22,22,.5)
+}
+.contact-section .social a:active{
+	color:#fff
+}
+
+body{
+	font-family:'Cabin';
+	letter-spacing:.0625em
+}
+
+a{
+	color:#424242
+}
+a:focus,a:hover{
+	text-decoration:none;
+	color:#3c6360
+}
+
+.bg-black{
+	background-color:#424242!important
+}
+.bg-primary{
+	background-color:#424242!important
+}
+
+.text-primary{
+	color:#424242!important
+}
+
+footer{
+	padding:5rem 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
